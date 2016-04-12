@@ -1,0 +1,11 @@
+ARCHFLAGS := -arch x86_64 -mmacosx-version-min=10.7 -stdlib=libc++
+CFLAGS := $(ARCHFLAGS) -O3 -I/Users/gong/Documents/Library/vamp-plugin-sdk -I/usr/local/boost -Wall -fPIC 
+CXXFLAGS := $(CFLAGS)
+
+LDFLAGS := /Users/gong/Documents/Library/vamp-plugin-sdk/libvamp-sdk.a $(ARCHFLAGS) 
+PLUGIN_LDFLAGS := -dynamiclib $(LDFLAGS) -exported_symbols_list vamp-plugin.list
+TEST_LDFLAGS := $(LDFLAGS) -lboost_unit_test_framework
+PLUGIN_EXT := .dylib
+
+include Makefile.inc
+
