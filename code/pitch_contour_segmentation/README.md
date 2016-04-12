@@ -7,9 +7,9 @@ Segmentation of jingju pitch track into a chain of steady, transitory and vibrat
 3. Run eval.py to evaluate the algorithm on test set.
 
 ##Dependencies
-Essentia 2.0.1 http://essentia.upf.edu/
-Numpy 1.9.2
-Scipy 0.15.1
-Matplotlib 1.4.3
-Scikit-learn 0.16.1
+Essentia 2.0.1 http://essentia.upf.edu/  
+Numpy 1.9.2  
+Scipy 0.15.1  
+Matplotlib 1.4.3  
+Scikit-learn 0.16.1  
 Statsmodels 0.6.1  
