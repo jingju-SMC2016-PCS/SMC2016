@@ -31,7 +31,7 @@ if __name__ == "__main__":
     pitchContourClassificationModelName = './pYinOut/train/model/pitchContourClassificationModel.pkl'
 
     # ground truth path
-    datasetPath         = os.path.realpath('../../dataset/')
+    datasetPath         = os.path.realpath('../../dataset/groundtruth/')
 
     featureVecPath      = './pYinOut/featureVec/'
     targetPath          = './pYinOut/target/'
