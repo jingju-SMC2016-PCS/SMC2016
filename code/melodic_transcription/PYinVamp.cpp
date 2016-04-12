@@ -88,7 +88,7 @@ PYinVamp::getDescription() const
 string
 PYinVamp::getMaker() const
 {
-    return "Matthias Mauch and Rong Gong";
+    return "Matthias Mauch and omitted for blind-reviewing";
 }
 
 int
