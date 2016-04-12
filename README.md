@@ -5,8 +5,11 @@ This is the folder for containing the code, dataset and supplement information o
 
 The code used in this paper is in "code" folder, where you can find:
 
-1. melodic_transcription: the modified pYIN algorithm code incorporated with the jingju bigram note transition probabilities + the binary for Mac OS X.
-2. pitch_contour_segmentation: the python code for pitch contour segmentation without the "preliminary segmentation" step (which is already performed by using melodic_transcription).
+1. melodic_transcription: code for estimating the bigram note transition probabilities from the jingju singing scores (dataset) and evaluating the performance of melodic transcription.
+2. pitch_contour_segmentation: the python code for pitch contour segmentation without the "preliminary segmentation" step (which is already performed by using pyin_noteTransition).
+3. pyin_noteTransition: the modified pYIN algorithm code incorporated with the jingju bigram note transition probabilities + the binary for Mac OS X.
+
+The correct step to reproduce the results is: 1) install pyinBOBigram Vamp plugin in pyin_noteTransition, 2) evaluate the performance of melodic transcription, 3) evaluate the pitch contour segmentation.
 
 ## Dataset
 
@@ -17,10 +20,12 @@ The dataset used in this paper is in "dataset" folder. The a cappella singing au
  * parameter optimization,
  * evaluating the StdCdLe thresholding and the overall segmentation performance.
 
+2. jinging singing scores in .xml format used for estimating the bigram note transition probabilities.
+
 ## Supplementary Information
 
 In the folder "supplementary_information", you can find:
 
-1. the complete grid search result for optimizing "StdCdLe threshold" and other parameters.
+the complete grid search result for optimizing "StdCdLe threshold" and other parameters.
 
 
