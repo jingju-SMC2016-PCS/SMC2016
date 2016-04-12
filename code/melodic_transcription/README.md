@@ -1,5 +1,4 @@
-
-pYIN
+#pYIN jingju
 ====
 
 pYIN is a modification of the well-loved YIN algorithm for fundamental
@@ -10,7 +9,7 @@ pYIN, as well as the original YIN method. The plugin can be used by
 any Vamp host such as Sonic Visualiser and Sonic Annotator.
 
 
-Method
+##Method
 ======
 
 The pYIN method is a modification of the method known as YIN (De
@@ -31,8 +30,9 @@ original YIN method for some threshold parameter.
 The note estimator is a post-processing step on the pYIN pitch track,
 also performed as Viterbi decoding of an HMM.
 
+This version of pYIN has been incoporated with bigram note transition probabilities estimated from a jingju singing dataset.
 
-Limitations
+##Limitations
 ===========
 
 The pYIN method is designed to reliably extract the fundamental
@@ -51,7 +51,7 @@ reliable. Such circumstances occur, e.g.
     keeps ringing while the melody turns to a different pitch.
 
 
-Authors, Citation, License and Use
+##Authors, Citation, License and Use
 ==================================
 
 pYIN was written by Matthias Mauch. Copyright 2012-2015 Matthias Mauch
@@ -82,4 +82,25 @@ MERCHANTABILITY or FITNESS FOR A ARTICULAR PURPOSE. See the GNU
 General Public License for more details. You should have received a
 copy of the GNU General Public License along with this program. If
 not, see http://www.gnu.org/licenses/.
+
+##Usage
+==================================
+The binary Vamp plugin for Mac OS X is provided as "pyinBOBigram.dylib" in this folder. 
+Please follow the method written in the below link to install it.
+
+http://www.vamp-plugins.org/download.html#install 
+
+Compiling has been tested in Xcode Version 7.2.1 (7C1002). Please change this line in _makefile_
+```makefile
+LDFLAGS := (your "libvamp-sdk.a" path) $(ARCHFLAGS) 
+```
+to your libvamp-sdk.a path. Vamp sdk can be downloaded here:
+
+http://www.vamp-plugins.org/develop.html
+
+Dependencies might be required, such as boost c++ library:
+
+http://www.boost.org/
+
+The bigram note transition probabilities is hardcoded in MonoNoteHMM.cpp as the variable _noteDistanceDistr_.
 
