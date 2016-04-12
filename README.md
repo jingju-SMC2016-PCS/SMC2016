@@ -12,7 +12,9 @@ The code used in this paper is in "code" folder, where you can find:
 
 The dataset used in this paper is in "dataset" folder. The a cappella singing audio recordings is not contained in this folder due to their large size, please contact the paper authors to request them (e-mail address will be given after the blind-reviewing process). In the folder you can find:
 
-1. melodic_transcription: the ground truth for evaluating the modified pYIN alogrithm.
-2. pitch_contour_segmentation: the ground truth for the parameter optimization and evaluating the StdCdLe thresholding and the overall segmentation performance.
+1. groundtruth: the ground truth annotation for 
+ * melodic transcription (*_melodicTrans.csv, male_12_pos_1 missing)
+ * parameter optimization
+ * evaluating the StdCdLe thresholding (*_coarseSeg.csv) and the overall segmentation performance (*_refinedSeg.csv).
 
 
