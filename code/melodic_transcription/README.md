@@ -1,5 +1,4 @@
 #pYIN jingju
-====
 
 pYIN is a modification of the well-loved YIN algorithm for fundamental
 frequency (F0) estimation in monophonic audio.
@@ -10,7 +9,6 @@ any Vamp host such as Sonic Visualiser and Sonic Annotator.
 
 
 ##Method
-======
 
 The pYIN method is a modification of the method known as YIN (De
 Cheveigné, Alain, and Hideki Kawahara. "YIN, a fundamental frequency
@@ -33,7 +31,6 @@ also performed as Viterbi decoding of an HMM.
 This version of pYIN has been incoporated with bigram note transition probabilities estimated from a jingju singing dataset.
 
 ##Limitations
-===========
 
 The pYIN method is designed to reliably extract the fundamental
 frequency of audio recordings of a monophonic, harmonic instrument
@@ -52,7 +49,6 @@ reliable. Such circumstances occur, e.g.
 
 
 ##Authors, Citation, License and Use
-==================================
 
 pYIN was written by Matthias Mauch. Copyright 2012-2015 Matthias Mauch
 and Queen Mary, University of London.
@@ -84,7 +80,7 @@ copy of the GNU General Public License along with this program. If
 not, see http://www.gnu.org/licenses/.
 
 ##Usage
-==================================
+
 The binary Vamp plugin for Mac OS X is provided as "pyinBOBigram.dylib" in this folder. 
 Please follow the method written in the below link to install it.
 
