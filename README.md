@@ -13,8 +13,14 @@ The code used in this paper is in "code" folder, where you can find:
 The dataset used in this paper is in "dataset" folder. The a cappella singing audio recordings is not contained in this folder due to their large size, please contact the paper authors to request them (e-mail address will be given after the blind-reviewing process). In the folder you can find:
 
 1. groundtruth: the ground truth annotation for 
- * melodic transcription (\*\_melodicTrans.csv, male\_12\_pos\_1 missing)
+ * melodic transcription (male\_12\_pos\_1 missing)
  * parameter optimization,
- * evaluating the StdCdLe thresholding (\*\_coarseSeg.csv) and the overall segmentation performance (\*\_refinedSeg.csv).
+ * evaluating the StdCdLe thresholding and the overall segmentation performance.
+
+## Supplementary Information
+
+In the folder "supplementary_information", you can find:
+
+1. the complete grid search result for optimizing "StdCdLe threshold" and other parameters.
 
 
