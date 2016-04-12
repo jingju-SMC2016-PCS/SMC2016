@@ -14,7 +14,7 @@ The dataset used in this paper is in "dataset" folder. The a cappella singing au
 
 1. groundtruth: the ground truth annotation for 
  * melodic transcription (\*\_melodicTrans.csv, male\_12\_pos\_1 missing)
- * parameter optimization
+ * parameter optimization,
  * evaluating the StdCdLe thresholding (\*\_coarseSeg.csv) and the overall segmentation performance (\*\_refinedSeg.csv).
 
 
