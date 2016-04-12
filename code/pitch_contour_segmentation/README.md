@@ -1,7 +1,15 @@
-# jingjuElementSegmentation
-Segmentation of jingju note into ascending, desending and vibrato parts
+#Pitch contour segmentation
+Segmentation of jingju pitch track into a chain of steady, transitory and vibrato segments.
 
-# Usage
-1. Using SonicVisualizer, export pYin pitch track and note transcription files in name_pitchtrack.txt and name_monoNoteOut.txt
-2. put these files into predict folder
-3. In demo.py, change recordingNamesPredict list into [name]. You can add multiple names, if you have multiple pitch tracks and transcriptions [name0, name1, ...]
+##Usage
+1. Make sure to clone the dataset folder which is required by this code.
+2. Run optimization.py to obtain the complete parameter optimization results. There is a copy in "supplementary information" folder.
+3. Run eval.py to evaluate the algorithm on test set.
+
+##Dependencies
+Essentia: http://essentia.upf.edu/
+Numpy
+Scipy
+Matplotlib
+Sklearn
+Statsmodels
