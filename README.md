@@ -13,7 +13,7 @@ The correct step to reproduce the results is: 1) install pyinBOBigram Vamp plugi
 
 ## Dataset
 
-The dataset used in this paper is in "dataset" folder. The a cappella singing audio recordings is not contained in this folder due to their large size, please contact the paper authors to request them (e-mail address will be given after the blind-reviewing process). In the folder you can find:
+The dataset used in this paper is in "dataset" folder. The a cappella singing audio recordings is not contained in this folder due to their large size, please contact the paper authors to request them (rong.gong@upf.edu). In the folder you can find:
 
 1. groundtruth: the ground truth annotation for 
  * melodic transcription (male\_12\_pos\_1 missing)
